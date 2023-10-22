@@ -771,6 +771,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "LevelRotator",
+            "id": "966b5a37-7be6-4c85-8b81-a6cad63166a1",
+            "actions": [
+                {
+                    "name": "Rotate",
+                    "type": "Button",
+                    "id": "25bfc00a-be93-49fa-acd6-e241dd8df750",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5c8cc88a-2160-448f-8ad7-45870b4ce076",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
