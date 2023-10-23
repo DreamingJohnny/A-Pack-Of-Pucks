@@ -310,6 +310,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &500352917 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2751105707147845148, guid: 860e058b4c4e1ff4ba0faa78d0164b11, type: 3}
+  m_PrefabInstance: {fileID: 128460392745998664}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &717244784
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,6 +538,14 @@ PrefabInstance:
     - target: {fileID: 7888093521711180472, guid: 860e058b4c4e1ff4ba0faa78d0164b11, type: 3}
       propertyPath: m_Name
       value: Maze
+      objectReference: {fileID: 0}
+    - target: {fileID: 8925132251701331807, guid: 860e058b4c4e1ff4ba0faa78d0164b11, type: 3}
+      propertyPath: maze
+      value: 
+      objectReference: {fileID: 500352917}
+    - target: {fileID: 8925132251701331807, guid: 860e058b4c4e1ff4ba0faa78d0164b11, type: 3}
+      propertyPath: m_rotSpeed
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
