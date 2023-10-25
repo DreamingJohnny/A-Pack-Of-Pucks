@@ -18,10 +18,10 @@ public class MazeRotator : MonoBehaviour {
 	private float m_beginTheta;
 
 	private void Update() {
-		Vector2 wheelPos = maze.position; //you may need to do some coordinate space conversion on this later
-		Vector2 mousePos = Input.mousePosition;
+		Vector2 mazePos = maze.position;
+		Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-		Vector2 localMousePos = mousePos - wheelPos;
+		Vector2 localMousePos = mousePos - mazePos;
 
 		float theta = Mathf.Atan2(localMousePos.y, localMousePos.x);
 

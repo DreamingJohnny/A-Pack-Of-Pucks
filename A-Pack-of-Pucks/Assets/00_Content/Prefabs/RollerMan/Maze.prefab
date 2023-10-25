@@ -628,7 +628,7 @@ Transform:
   - {fileID: 3014718970641051321}
   - {fileID: 5850946920518777671}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &3415593345330175935
 Rigidbody2D:
@@ -694,10 +694,6 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 0a842abb-2a1c-4bee-9881-3b27c83f593e
     m_ActionName: Player/Fire[/Mouse/leftButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 195dabcd-fbbe-4224-98aa-3d637eb99262
-    m_ActionName: Player/Rotate[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 06537e43-7179-43fa-8da2-727786bcfe0b
@@ -771,3 +767,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb21c708f99dbf14a8ad5755dceac886, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maze: {fileID: 2751105707147845148}
+  m_rotSpeed: 15
