@@ -21,7 +21,6 @@ public class GameController : MonoBehaviour {
 		foreach (Point point in points) {
 			point.OnPointCollect.AddListener(IncreaseScore);
 		}
-
 	}
 
 	private void IncreaseScore() {
