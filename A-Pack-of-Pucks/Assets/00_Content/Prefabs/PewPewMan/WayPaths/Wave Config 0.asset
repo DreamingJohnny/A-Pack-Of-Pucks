@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b521c82c57ad72438563ea367cbdb08, type: 3}
+  m_Name: Wave Config 0
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
+  - {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
+  preFabWayPoints: {fileID: 2696618559045937654, guid: 81702656360f38c4db58c1bfd7585a05, type: 3}
