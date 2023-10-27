@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7617610025565238995}
   - component: {fileID: 3079962554139452573}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: EnemyWaveSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,3 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa492390edb2c0f46852ca1d4adbd267, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLoopingWaves: 1
+  waveConfigSOs:
+  - {fileID: 11400000, guid: acc22f9cc16e64748b78742153a55738, type: 2}
+  - {fileID: 11400000, guid: 0363fbe887a337b4889b3a311f66c08d, type: 2}

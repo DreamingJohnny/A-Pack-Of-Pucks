@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: -7628562326765901356}
   - component: {fileID: 3934079839416519320}
   - component: {fileID: 293151539131215507}
+  - component: {fileID: 4306309734203731109}
+  - component: {fileID: -3932668089848882713}
   m_Layer: 7
   m_Name: PewPewMan_Shot
   m_TagString: Untagged
@@ -162,3 +164,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &4306309734203731109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4523636138850288787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e06c9d02f84d944e82c30596e313b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+--- !u!114 &-3932668089848882713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4523636138850288787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1

@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b521c82c57ad72438563ea367cbdb08, type: 3}
   m_Name: Wave Config 1
   m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
+  - {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
+  - {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
+  - {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
   preFabWayPoints: {fileID: 6613124910634348597, guid: cc3c9555644d1804a848edef9df9b41f, type: 3}
+  spanBetweenSpawn: 1
+  pauseAtEndOfWave: 5

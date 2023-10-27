@@ -16,3 +16,5 @@ MonoBehaviour:
   - {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
   - {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
   preFabWayPoints: {fileID: 2696618559045937654, guid: 81702656360f38c4db58c1bfd7585a05, type: 3}
+  spanBetweenSpawn: 1
+  pauseAtEndOfWave: 5

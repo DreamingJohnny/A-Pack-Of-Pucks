@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8562764909005354377}
   - component: {fileID: 4635861238287417625}
   - component: {fileID: 5578169700933458390}
+  - component: {fileID: 1434925650293217436}
+  - component: {fileID: 3211910783107407858}
   m_Layer: 0
   m_Name: EnemyGhostShip
   m_TagString: Untagged
@@ -35,7 +37,7 @@ Transform:
   m_Children:
   - {fileID: 7678435831730298}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5164399169284914382
 SpriteRenderer:
@@ -145,7 +147,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -164,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyShot: {fileID: 8998278937026453957, guid: febd42731c6f2ca4a9cf5e227c486ce0, type: 3}
-  reloadTime: 1
+  reloadTime: 3
   speed: 2
 --- !u!114 &5578169700933458390
 MonoBehaviour:
@@ -178,7 +180,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9eb1921cb9c26147a64a21846b7a81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wave: {fileID: 11400000, guid: 0363fbe887a337b4889b3a311f66c08d, type: 2}
+--- !u!114 &1434925650293217436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7900414874568711403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
+--- !u!114 &3211910783107407858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7900414874568711403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e06c9d02f84d944e82c30596e313b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
 --- !u!1 &8013765468451097732
 GameObject:
   m_ObjectHideFlags: 0

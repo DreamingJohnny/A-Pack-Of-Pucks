@@ -76,6 +76,8 @@ GameObject:
   - component: {fileID: 8120922459324695159}
   - component: {fileID: 8744287008896502374}
   - component: {fileID: 8221682038894565450}
+  - component: {fileID: 3425228041266906529}
+  - component: {fileID: 7079966318784236907}
   m_Layer: 0
   m_Name: PewPewMan
   m_TagString: Player
@@ -260,3 +262,30 @@ MonoBehaviour:
   cannonNozzles:
   - {fileID: 5389392188846503707}
   - {fileID: 5545986565952415439}
+  speed: 0
+--- !u!114 &3425228041266906529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9126020323780102390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+--- !u!114 &7079966318784236907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9126020323780102390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e06c9d02f84d944e82c30596e313b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 50

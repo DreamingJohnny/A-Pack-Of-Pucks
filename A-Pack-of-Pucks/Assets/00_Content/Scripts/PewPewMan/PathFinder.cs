@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PathFinder : MonoBehaviour {
 
-	private EnemySpawner enemySpawner;
+	private EnemyWaveSpawner enemySpawner;
 	private WaveConfigSO wave;
 
 	public float GetSpeed {
@@ -26,7 +26,7 @@ public class PathFinder : MonoBehaviour {
 
 	private void OnEnable() {
 
-		enemySpawner = FindObjectOfType<EnemySpawner>();
+		enemySpawner = FindObjectOfType<EnemyWaveSpawner>();
 
 		wave = enemySpawner.CurrentWave;
 

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3524006176672177991}
   - component: {fileID: 5457925453868956500}
   - component: {fileID: -2274251881375777816}
+  - component: {fileID: -2997440567122082684}
+  - component: {fileID: 4061485274820633030}
   m_Layer: 0
   m_Name: Enemy_PurpleShot
   m_TagString: Untagged
@@ -162,3 +164,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+--- !u!114 &-2997440567122082684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998278937026453957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e06c9d02f84d944e82c30596e313b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+--- !u!114 &4061485274820633030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998278937026453957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1

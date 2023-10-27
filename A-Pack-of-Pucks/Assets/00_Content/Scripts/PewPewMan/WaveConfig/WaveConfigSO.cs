@@ -9,6 +9,19 @@ public class WaveConfigSO : ScriptableObject {
 	[SerializeField] private List<GameObject> enemyPrefabs;
 	[SerializeField] private Transform preFabWayPoints;
 
+	[SerializeField] private float spanBetweenSpawn;
+	[SerializeField] private float pauseAtEndOfWave;
+
+	/// <summary>
+	/// Time in s between enemy spawning
+	/// </summary>
+	public float GetSpanBetweenSpawn { get { return spanBetweenSpawn; } }
+
+	/// <summary>
+	/// Time in s between last enemy in wave spawning and the wave ending
+	/// </summary>
+	public float PauseAtEndOfWave { get { return pauseAtEndOfWave; } }
+
 	/// <summary>
 	/// Returns the gameobject at the given index within the list "enemyPrefabs".
 	/// </summary>

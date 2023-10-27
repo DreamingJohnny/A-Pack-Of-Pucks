@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class EnemyGhost : MonoBehaviour {
 
-	private Transform[] cannonNozzles;
+	private List<Transform> cannonNozzles;
 	[SerializeField] private GameObject enemyShot;
 	[SerializeField] private float reloadTime;
 	private float timeSinceShot;
@@ -21,7 +22,18 @@ public class EnemyGhost : MonoBehaviour {
 	}
 
 	private void InitCannons() {
-		cannonNozzles = GetComponentsInChildren<Transform>();
+
+		Transform[] transforms = GetComponentsInChildren<Transform>();
+		cannonNozzles = new List<Transform>();
+
+		//Ensures the list doesn't include the transform on this gameObject
+		foreach (Transform transform in transforms) {
+			if(transform != gameObject.transform) {
+				cannonNozzles.Add(transform);
+			}
+		}
+
+		Debug.Log($"{cannonNozzles.Count}");
 	}
 
 	void Update() {
@@ -34,8 +46,7 @@ public class EnemyGhost : MonoBehaviour {
 			foreach (Transform transform in cannonNozzles) {
 				Instantiate(enemyShot, 
 							transform.position,
-							Quaternion.identity,
-							transform);
+							Quaternion.identity);
 			}
 		}
 		else {

@@ -48,8 +48,7 @@ public class PewPewPlayerController : MonoBehaviour {
 		foreach (Transform transform in cannonNozzles) {
 			Instantiate(pewPewShot, 
 						transform.position,
-						Quaternion.identity,
-						transform);
+						Quaternion.identity);
 		}
 	}
 }
