@@ -8,18 +8,30 @@ using UnityEngine.InputSystem;
 public class PewPewPlayerController : MonoBehaviour {
 
 	//The gameobject that will be spawned on fire
-	[SerializeField] private GameObject pewPewShot;
+	//[SerializeField] private GameObject pewPewShot;
 
 	//Where the shots will be spawned from
-	[SerializeField] private Transform[] cannonNozzles;
+	//[SerializeField] private Transform[] cannonNozzles;
 
 	Rigidbody2D rigidBody;
 	private Vector2 movement;
 	//The speed with which the ship moves
 	[SerializeField] private float speed;
 
+	private Shooter shooter;
+
 	void Start() {
 		InitPewPewBody();
+		InitShooter();
+	}
+
+	private void InitShooter() {
+		if(TryGetComponent(out shooter)) {
+
+		}
+		else {
+			Debug.Log($"{name} couldn't find the shooter component.");
+		}
 	}
 
 	private void InitPewPewBody() {
@@ -45,10 +57,7 @@ public class PewPewPlayerController : MonoBehaviour {
 	}
 
 	private void OnFire(InputValue value) {
-		foreach (Transform transform in cannonNozzles) {
-			Instantiate(pewPewShot, 
-						transform.position,
-						Quaternion.identity);
-		}
+
+		shooter.Fire(value.isPressed);
 	}
 }

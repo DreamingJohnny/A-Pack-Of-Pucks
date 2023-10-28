@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5389392188846503707}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: RightBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5545986565952415439}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LeftBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,8 @@ GameObject:
   - component: {fileID: 8221682038894565450}
   - component: {fileID: 3425228041266906529}
   - component: {fileID: 7079966318784236907}
-  m_Layer: 0
+  - component: {fileID: 7480804885246160074}
+  m_Layer: 6
   m_Name: PewPewMan
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -167,7 +168,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.2
+  m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -210,7 +211,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -258,11 +259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47b7e0909ce101741acf1a5c0293eb1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pewPewShot: {fileID: 4523636138850288787, guid: 19681b1f7eb92c146bfeb9461d596ea3, type: 3}
-  cannonNozzles:
-  - {fileID: 5389392188846503707}
-  - {fileID: 5545986565952415439}
-  speed: 0
+  speed: 200
 --- !u!114 &3425228041266906529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -275,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 6000
 --- !u!114 &7079966318784236907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,3 +286,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
+--- !u!114 &7480804885246160074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9126020323780102390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb6103d29ae91e4d8de5ad30773c287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 4523636138850288787, guid: 19681b1f7eb92c146bfeb9461d596ea3, type: 3}
+  reloadTime: 5
+  cannonNozzles:
+  - {fileID: 5389392188846503707}
+  - {fileID: 5545986565952415439}
