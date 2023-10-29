@@ -101,7 +101,7 @@ Transform:
   - {fileID: 5389392188846503707}
   - {fileID: 5545986565952415439}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4657559045232524812
 SpriteRenderer:
@@ -272,6 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destructionEffect: {fileID: 253299119885604812, guid: f35f9f0203c532341a064f016dd25090, type: 3}
   health: 6000
 --- !u!114 &7079966318784236907
 MonoBehaviour:
@@ -299,7 +300,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 4523636138850288787, guid: 19681b1f7eb92c146bfeb9461d596ea3, type: 3}
-  reloadTime: 5
-  cannonNozzles:
-  - {fileID: 5389392188846503707}
-  - {fileID: 5545986565952415439}
+  rateOfFire: 3

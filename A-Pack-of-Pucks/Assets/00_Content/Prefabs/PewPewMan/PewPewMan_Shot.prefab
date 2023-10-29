@@ -163,6 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673660a0cbed5a345bcf462b7bd8a7bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  creationEffect: {fileID: 241160481615736862, guid: b887cc13d48595c4698673f7c3bb6263, type: 3}
   speed: 4
   lifeTime: 10
 --- !u!114 &4306309734203731109
@@ -190,4 +191,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destructionEffect: {fileID: 6396672632207064297, guid: b5090cb6cfeae3848a4c4af1c84cdcdd, type: 3}
   health: 1

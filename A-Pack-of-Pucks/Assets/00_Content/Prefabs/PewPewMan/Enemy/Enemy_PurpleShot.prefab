@@ -35,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2470268437576163264
 SpriteRenderer:
@@ -165,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   lifeTime: 10
+  creationEffect: {fileID: 5585501139621891507, guid: ac337134509f98b469e312d4843c0845, type: 3}
 --- !u!114 &-2997440567122082684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,4 +191,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destructionEffect: {fileID: 2175961129906956910, guid: f9875a8c090c7254088b5b167b12cf33, type: 3}
   health: 1

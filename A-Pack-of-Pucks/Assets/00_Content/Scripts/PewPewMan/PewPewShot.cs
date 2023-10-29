@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PewPewShot : MonoBehaviour {
 
+	[SerializeField] private ParticleSystem creationEffect;
+
 	[SerializeField] private float speed;
 
 	//Amount of time in s that the projectile shoud exist for.
@@ -13,6 +15,12 @@ public class PewPewShot : MonoBehaviour {
 
 	private void OnEnable() {
 		timeLived = 0f;
+		PlayCreationEffects();
+	}
+
+	private void PlayCreationEffects() {
+		ParticleSystem instance = Instantiate(creationEffect, transform.position, Quaternion.identity);
+		Destroy(instance, creationEffect.main.duration + creationEffect.main.startLifetime.constantMax);
 	}
 
 	private void Update() {
@@ -36,9 +44,5 @@ public class PewPewShot : MonoBehaviour {
 		transform.position = Vector3.MoveTowards(transform.position,
 												target: new Vector3(transform.position.x, transform.position.y + 1, transform.position.z),
 												speed * Time.deltaTime);
-	}
-
-	private void OnTriggerEnter2D(Collider2D collision) {
-		Debug.Log($"{name} collided with {collision.gameObject.name}.");
 	}
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
+	[SerializeField] private ParticleSystem destructionEffect;
+
 	[SerializeField] private float health;
 
 	public float GetHealth() {
@@ -25,11 +27,16 @@ public class Health : MonoBehaviour {
 	}
 
 	private void DeathCheck() {
-		Debug.Log($"{name} is checking its health. Its health is now {GetHealth()}");
 
 		if(health <= 0f) {
-			Debug.Log($"{name} has less than zero health and will now be destroyed");
+			PlayDestructionEffects();
 			Destroy(gameObject);
 		}
+	}
+
+	private void PlayDestructionEffects() {
+		ParticleSystem instance = Instantiate(destructionEffect, transform.position, Quaternion.identity);
+
+		Destroy(instance, instance.main.duration + instance.main.startLifetime.constantMax);
 	}
 }
