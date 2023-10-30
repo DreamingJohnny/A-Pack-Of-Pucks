@@ -14,7 +14,10 @@ public class PewPewPlayerController : MonoBehaviour {
 
 	private Shooter shooter;
 
+	private CameraShake cameraShake;
+
 	void Start() {
+
 		InitPewPewBody();
 		InitShooter();
 	}
@@ -32,10 +35,6 @@ public class PewPewPlayerController : MonoBehaviour {
 		if (!TryGetComponent(out rigidBody)) {
 			Debug.Log($"{gameObject.name} is lacking a rigidbody2D component.");
 		}
-	}
-
-	void Update() {
-
 	}
 
 	private void FixedUpdate() {

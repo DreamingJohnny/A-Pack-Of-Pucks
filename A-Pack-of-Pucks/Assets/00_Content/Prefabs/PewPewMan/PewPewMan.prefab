@@ -272,6 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shouldShakeCamera: 1
   destructionEffect: {fileID: 253299119885604812, guid: f35f9f0203c532341a064f016dd25090, type: 3}
   health: 6000
 --- !u!114 &7079966318784236907
