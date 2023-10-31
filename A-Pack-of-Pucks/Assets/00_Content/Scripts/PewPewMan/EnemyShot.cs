@@ -18,6 +18,8 @@ public class EnemyShot : MonoBehaviour {
 	}
 
 	private void PlayCreationEffects() {
+		AudioPlayer.Instance.EnemyShooting();
+
 		ParticleSystem instance = Instantiate(creationEffect, transform.position, Quaternion.identity);
 
 		Destroy(instance, instance.main.duration + instance.main.startLifetime.constantMax);

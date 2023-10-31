@@ -19,6 +19,9 @@ public class PewPewShot : MonoBehaviour {
 	}
 
 	private void PlayCreationEffects() {
+
+		AudioPlayer.Instance.PlayerShooting();
+
 		ParticleSystem instance = Instantiate(creationEffect, transform.position, Quaternion.identity);
 		Destroy(instance, creationEffect.main.duration + creationEffect.main.startLifetime.constantMax);
 	}
