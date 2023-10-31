@@ -273,8 +273,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shouldShakeCamera: 1
+  shakeDuration: 2
+  shakeStrength: 2
   destructionEffect: {fileID: 253299119885604812, guid: f35f9f0203c532341a064f016dd25090, type: 3}
-  health: 6000
+  health: 3000
 --- !u!114 &7079966318784236907
 MonoBehaviour:
   m_ObjectHideFlags: 0

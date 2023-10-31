@@ -38,8 +38,6 @@ public class Shooter : MonoBehaviour {
 				cannonNozzles.Add(transform);
 			}
 		}
-
-		Debug.Log($"{name} has {cannonNozzles.Count} nozzles to fire from");
 	}
 
 	public void Fire(bool value) {
