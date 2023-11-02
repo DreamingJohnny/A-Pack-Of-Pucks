@@ -5,6 +5,10 @@ using System.Linq;
 
 public class EnemyGhost : MonoBehaviour {
 
+	private string enemyType = "Basic Enemy Purple";
+
+	public string EnemyType { get { return enemyType; } }
+
 	private Shooter shooter;
 	[SerializeField] private float reloadTime;
 	private float timeSinceShot;

@@ -3,8 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour {
+
+	public event EventHandler OnKilled;
 
 	[SerializeField] private bool shouldShakeCamera = false;
 	[Range(0f,10.0f)] [SerializeField] private float shakeDuration;
@@ -13,6 +16,10 @@ public class Health : MonoBehaviour {
 	[SerializeField] private ParticleSystem destructionEffect;
 
 	[SerializeField] private float health;
+
+	private void Start() {
+
+	}
 
 	public float GetHealth() {
 		return health;
@@ -28,6 +35,8 @@ public class Health : MonoBehaviour {
 		DecreaseHealth(damageDealer.Damage);
 
 		if (IsDead()) {
+			OnKilled?.Invoke(this, EventArgs.Empty);
+
 			PlayDestructionEffects();
 			Destroy(gameObject);
 		}

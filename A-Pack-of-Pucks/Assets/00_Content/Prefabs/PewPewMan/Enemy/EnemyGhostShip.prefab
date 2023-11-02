@@ -192,8 +192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shouldShakeCamera: 0
+  shakeDuration: 0
+  shakeStrength: 0
   destructionEffect: {fileID: 5563146356130425367, guid: ff79618c36366e740af9d9493c592c64, type: 3}
-  health: 500
+  health: 1
 --- !u!114 &3211910783107407858
 MonoBehaviour:
   m_ObjectHideFlags: 0
