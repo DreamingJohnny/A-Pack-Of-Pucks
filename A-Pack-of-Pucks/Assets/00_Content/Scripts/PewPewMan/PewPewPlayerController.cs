@@ -9,12 +9,11 @@ public class PewPewPlayerController : MonoBehaviour {
 
 	Rigidbody2D rigidBody;
 	private Vector2 movement;
+	
 	//The speed with which the ship moves
 	[SerializeField] private float speed;
 
 	private Shooter shooter;
-
-	private CameraShake cameraShake;
 
 	void Start() {
 
