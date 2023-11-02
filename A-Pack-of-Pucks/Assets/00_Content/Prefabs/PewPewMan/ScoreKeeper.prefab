@@ -44,3 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09d5687b2d0a405439c31c048322e48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  basicEnemyPurple_Score: 15
+  basicEnemyRed_Score: 0
+  BossEnemyBlue_Score: 0

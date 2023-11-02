@@ -398,6 +398,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4635861238287417625, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
+      propertyPath: enemyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7900414874568711403, guid: a09ae6e9e9ef4b04eba065f963de67f4, type: 3}
       propertyPath: m_Name
       value: EnemyGhostShip
@@ -896,6 +900,10 @@ PrefabInstance:
     - target: {fileID: 1702498599409605328, guid: 67a1792f1d668654a8811aa035a82396, type: 3}
       propertyPath: m_Name
       value: ScoreKeeper
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043970355245502014, guid: 67a1792f1d668654a8811aa035a82396, type: 3}
+      propertyPath: basicEnemyPurple_Score
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8480873698974086042, guid: 67a1792f1d668654a8811aa035a82396, type: 3}
       propertyPath: m_RootOrder
