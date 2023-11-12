@@ -36,7 +36,6 @@ public class EnemyWaveSpawner : MonoBehaviour {
 														transform);
 
 
-					//On dead should ideally send with it an enum or something so that I can look at the type of enemy it is that dies
 					tempEnemy.GetComponent<Health>().OnKilled += scoreKeeper.HandleOnKilled;
 
 					yield return new WaitForSeconds(CurrentWave.GetSpanBetweenSpawn);
