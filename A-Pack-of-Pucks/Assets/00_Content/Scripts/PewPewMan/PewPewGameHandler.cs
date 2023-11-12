@@ -6,9 +6,11 @@ public class PewPewGameHandler : MonoBehaviour {
 
 	[SerializeField] private ScoreKeeper scoreKeeper;
 	[SerializeField] private UIManager uIManager;
+	[SerializeField] private GameObject player;
 
 	void Start() {
 		AddSubscribers();
+		InitializePlayer();
 	}
 
 	void Update() {
@@ -22,6 +24,16 @@ public class PewPewGameHandler : MonoBehaviour {
 	private void UnsubscribeSubscribers() {
 		scoreKeeper.OnScoreUpdated -= uIManager.HandleOnScoreUpdate;
 	}
-	//So, a function where it gets and handles the subscriptions?
-	//So, the uIManager needs to get the scoreKeeper?
+
+	private void InitializePlayer() {
+		uIManager.SetHealthSliderMax(player.GetComponent<Health>().GetHealth());
+		player.GetComponent<Health>().OnDamaged += uIManager.HandleOnHealthUpdate;
+		//Get the player's health script, and then have the UIManager subscribe to that health here then?
+	}
+
+	private void DestroyPlayer() {
+		player.GetComponent<Health>().OnDamaged -= uIManager.HandleOnHealthUpdate;
+		//For resetting and also unsubscribing to things.
+		//Might want to rethink renaming this to something like "restart game" later.
+	}
 }

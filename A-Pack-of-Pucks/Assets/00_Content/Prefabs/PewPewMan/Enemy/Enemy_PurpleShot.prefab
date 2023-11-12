@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e06c9d02f84d944e82c30596e313b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 1
 --- !u!114 &4061485274820633030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,5 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f717d7f955925e243a0964c05940ed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shouldShakeCamera: 0
+  shakeDuration: 0
+  shakeStrength: 0
   destructionEffect: {fileID: 2175961129906956910, guid: f9875a8c090c7254088b5b167b12cf33, type: 3}
   health: 1

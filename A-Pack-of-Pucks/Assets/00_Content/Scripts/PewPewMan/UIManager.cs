@@ -10,7 +10,6 @@ public class UIManager : MonoBehaviour {
 	[SerializeField] private TextMeshProUGUI scoreValue;
 	[SerializeField] private Slider healthSlider;
 	
-	//might want to extend this to method for incase this hasn't been set.
 	private float maxSliderHealth;
 
 	public float MaxSliderHealth {
@@ -25,8 +24,6 @@ public class UIManager : MonoBehaviour {
 		}
 	}
 
-
-	//So, should subscribe to events then, so need public methods for those events to subscribe to.
 	void Start() {
 
 	}
@@ -46,7 +43,7 @@ public class UIManager : MonoBehaviour {
 		scoreValue.text = i.ToString();
 	}
 
-	public void HandleOnHealthUpdate(float health) {
-		healthSlider.value = health / MaxSliderHealth;
+	public void HandleOnHealthUpdate(object sender, Health.OnDamagedEventArgs e) {
+		healthSlider.value = e.Health / MaxSliderHealth;
 	}
 }
