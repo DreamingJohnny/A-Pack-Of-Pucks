@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour {
 
+	public event EventHandler<OnScoreUpdatedEventArgs> OnScoreUpdated;
+	public class OnScoreUpdatedEventArgs : EventArgs {
+		public float Score;
+	}
+
 	[Min(0)] private float score;
 
 	public float Score { get { return score; } }
@@ -49,9 +54,11 @@ public class ScoreKeeper : MonoBehaviour {
 	public void AddScore(float value) {
 		score += value;
 		Debug.Log($"the score is now {score}.");
+		OnScoreUpdated?.Invoke(this, new OnScoreUpdatedEventArgs { Score = score }); ;
 	}
 
 	public void ResetScore() {
 		score = 0f;
+		OnScoreUpdated?.Invoke(this, new OnScoreUpdatedEventArgs { Score = score }); ;
 	}
 }
