@@ -28,7 +28,9 @@ public class PewPewGameHandler : MonoBehaviour {
 	private void InitializePlayer() {
 		uIManager.SetHealthSliderMax(player.GetComponent<Health>().GetHealth());
 		player.GetComponent<Health>().OnDamaged += uIManager.HandleOnHealthUpdate;
-		//Get the player's health script, and then have the UIManager subscribe to that health here then?
+		//To ensure the healthSlider has the current health of the player
+		player.GetComponent<Health>().DecreaseHealth(0f);
+
 	}
 
 	private void DestroyPlayer() {
